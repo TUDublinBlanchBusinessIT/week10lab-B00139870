@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./sessionEx.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2 align="center">Flight Booking</h2>
+  <img src="step1.jpg" class="image-responsive center-block" style="height:50px; width:100%">
+  <br><br>
+  <form class="form-horizontal" action="processForm1.php" method="POST">
+    <div class="form-group">
+      <label class="control-label col-sm-5" for="firstname">Firstname:</label>
+      <div class="col-sm-7">
+        <input type="text" class="form-control" id="firstname" placeholder="Enter Your Firstname" name="firstname">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-5" for="surname">Surname:</label>
+      <div class="col-sm-7">          
+        <input type="text" class="form-control" id="surname" placeholder="Enter Your Surname" name="surname">
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-5 col-sm-7">
+        <div class="checkbox">
+          <label><input type="checkbox" name="luggage">Do you have luggage?</label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-5 col-sm-7">
+        <button type="submit" class="btn btn-default">Continue</button>
+      </div>
+    </div>
+  </form>
+</div>
+</div>
+
+</body>
+</html>
