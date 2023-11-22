@@ -2,9 +2,8 @@
 session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
-    $subTenKG = $_POST['subTenKG'] ?? 0;
-    $overTenKG = $_POST['overTenKG'] ?? 0;
+$subTenKG = isset($_POST['subTenKG']) ? intval($_POST['subTenKG']) : 0;
+$overTenKG = isset($_POST['overTenKG']) ? intval($_POST['overTenKG']) : 0;
 
 
     $_SESSION['subTenKG'] = $subTenKG;
